@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background: #1c1b21;
 	color: #FAFAFA;
@@ -8,12 +12,15 @@ body {
 .container {
 	border: 10px solid #6c38cc;
 	display: flex;
-	flex-direction: row;
+	height: 550px;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
 }
 
 .item {
 	background: #232228;
 	border: 1px solid #6c38cc;
 	text-align: center;
+	width: calc(100% / 3);
 	padding: 10px;
 }

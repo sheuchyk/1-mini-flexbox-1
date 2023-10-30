@@ -12,6 +12,9 @@ body {
 .container {
 	border: 10px solid #6c38cc;
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 100vh;
 }
 
 .item {
@@ -20,19 +23,9 @@ body {
 	text-align: center;
 	padding: 10px;
 	flex-basis: 300px;
-	/* flex-grow: 1; */
+	flex-grow: 1;
 }
 
-.item1 {
-	flex: 1 1 300px;
-	/* flex-grow: 1;
-	flex-basis: 300px;
-	flex-shrink: 1; */
-}
-
-.item2 {
-	flex: 5 10 300px;
-	/* flex-grow: 5;
-	flex-basis: 100px;
-	flex-shrink: 10; */
+.item4 {
+	flex-grow: 15;
 }

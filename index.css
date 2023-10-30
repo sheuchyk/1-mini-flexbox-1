@@ -13,8 +13,10 @@ body {
 	border: 10px solid #6c38cc;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	height: 100vh;
+	gap: 20px;
+	/* gap: 20px 10px; */
+	/* row-gap: 20px;
+	column-gap: 10px; */
 }
 
 .item {
@@ -22,10 +24,5 @@ body {
 	border: 1px solid #6c38cc;
 	text-align: center;
 	padding: 10px;
-	flex-basis: 300px;
-	flex-grow: 1;
-}
-
-.item4 {
-	flex-grow: 15;
+	flex: 1 1 calc(100% / 4 - 20px * 3 / 4);
 }
